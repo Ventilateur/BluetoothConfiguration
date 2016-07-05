@@ -4,13 +4,14 @@ public class ManipCmdLine {
 	
 	private static final String _COMMENT = "@@";
 	private static final String _DELAY = "@DELAY";
+	private static final String _DEFAULT_DELAY = "1000";
 	
 	public static enum Type {COMMAND, DELAY, COMMENT}
 	
-	public static final class ReturnType {
+	public static final class DataType {
 		private Type mode;
 		private String data;
-		public ReturnType() {
+		public DataType() {
 			mode = Type.COMMENT;
 			data = "";
 		}
@@ -22,15 +23,16 @@ public class ManipCmdLine {
 	
 	public ManipCmdLine() {}
 	
-	public static ReturnType checkStringLine(String s) {
+	public static DataType checkStringLine(String s) {
 		String[] sb = s.split("\\s+");
-		ReturnType ret = new ReturnType();
+		DataType ret = new DataType();
 		if (sb[0].equals(_COMMENT)) {
 			ret.setMode(Type.COMMENT);
 			ret.setData(sb[1]);
 		} else if (sb[0].equals(_DELAY)) {
 			ret.setMode(Type.DELAY);
-			ret.setData(sb[1]);
+			if (sb.length >= 2) ret.setData(sb[1]);
+			else ret.setData(_DEFAULT_DELAY);
 		} else {
 			ret.setMode(Type.COMMAND);
 			ret.setData(sb[0]);

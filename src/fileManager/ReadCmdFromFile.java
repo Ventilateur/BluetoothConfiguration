@@ -24,6 +24,7 @@ public class ReadCmdFromFile {
 		} catch (IOException e) {
 			System.out.println("Error: may be file does not exist?");
 			e.printStackTrace();
+			System.exit(0);
 		}
 	}
 	
@@ -42,6 +43,7 @@ public class ReadCmdFromFile {
 		} catch (IOException e) {
 			System.out.println("Error: may be file does not exist?");
 			e.printStackTrace();
+			System.exit(0);
 		}
 		return ret;
 	}
