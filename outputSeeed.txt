@@ -1,0 +1,97 @@
+Here come all available ports:
+COM10
+Port COM10 is opened, waiting for commands...
+Processing command list...
+Waiting 5000 milliseconds...
+Configuring, please wait...
+
+Sending  to port COM10...  Sent!
+
+Sending AT to port COM10...  Sent!
+Waiting 1000 milliseconds...
+Config done
+Enter AT commands:
+OK+Set:9600OK
+Sending  to port COM10...  Sent!
+
+Sending AT+NAMECatDogCatDog to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+Set:CatDogCatDog
+Sending  to port COM10...  Sent!
+
+Sending AT+NAME? to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+NAME:CatDogCatDog
+Sending  to port COM10...  Sent!
+
+Sending AT+VERSION to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+VERSION:HMSoft V621
+Sending  to port COM10...  Sent!
+
+Sending AT+BAUD4 to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+Set:9600
+Sending  to port COM10...  Sent!
+
+Sending AT+BAUD? to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+BAUD:9600
+Sending  to port COM10...  Sent!
+
+Sending AT+PIN0000 to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+Set:0000
+Sending  to port COM10...  Sent!
+
+Sending AT+PIN? to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+PIN:0000
+Sending  to port COM10...  Sent!
+
+Sending AT+CHK0 to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+Set:0
+Sending  to port COM10...  Sent!
+
+Sending AT+CHK? to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+CHK:0
+Sending  to port COM10...  Sent!
+
+Sending AT+STOP1 to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+Set:1
+Sending  to port COM10...  Sent!
+
+Sending AT+UART401 to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+UART:9600,N,1
+Sending  to port COM10...  Sent!
+
+Sending AT+SECH? to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+SECH:OKAY
+Sending  to port COM10...  Sent!
+
+Sending AT+APCH? to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+APCH:OKAY
+Sending  to port COM10...  Sent!
+
+Sending AT+TEMP? to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+TEMP:33
+Sending  to port COM10...  Sent!
+
+Sending AT+DISC0 to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+Set:0
+Sending  to port COM10...  Sent!
+
+Sending AT+DISC? to port COM10...  Sent!
+Waiting 1000 milliseconds...
+OK+DISC:0
+Sending  to port COM10...  Sent!
+
+All commands have been sent, exiting program!

@@ -107,8 +107,7 @@ public class ConfigBltFromFile extends PApplet {
 			t.start();
 		}
 	}
-	
-	
+
 	public static void main(String[] args) {
 		
 		printPortsInfo();
@@ -122,12 +121,12 @@ public class ConfigBltFromFile extends PApplet {
 				break;
 			case (1):
 				useTextFile = true;
-				cmdList = ReadCmdFromFile.readFile(args[0]);
+				portName = args[0];
 				break;
 			case (2):
 				useTextFile = true;
-				cmdList = ReadCmdFromFile.readFile(args[0]);
-				portName = args[1];
+				portName = args[0];
+				cmdList = ReadCmdFromFile.readFile(args[1]);
 				break;
 			default:
 				System.out.println("Too many arguments! Maximum 3 required!");
